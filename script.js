@@ -75,11 +75,11 @@ function cambiarPrecio(){
 }
 
 function mostrarInformacion(){
-    document.getElementById("infonombre").innerHTML = "Nombre: " + gestor1.getNombre()+ "."
-    document.getElementById("infocontrato").innerHTML = "Número de contrato "+ gestor1.getNumContrato()+ "."
-    document.getElementById("infoplan").innerHTML = "Tipo de plan "+ gestor1.getTipoPlan()+ "."
-    document.getElementById("infovelocidad").innerHTML = "Velocidad: "+ gestor1.getVelocidad()+ " Mbps."
-    document.getElementById("infoprecio").innerHTML = "Precio por mes "+ gestor1.getPrecio()+ "."
+    document.getElementById("info.nombre").innerHTML = "Nombre: " + gestor1.getNombre()
+    document.getElementById("info.contrato").innerHTML = "Número de contrato "+ gestor1.getNumContrato()
+    document.getElementById("info.plan").innerHTML = "Tipo de plan "+ gestor1.getTipoPlan()
+    document.getElementById("info.velocidad").innerHTML = "Velocidad: "+ gestor1.getVelocidad()
+    document.getElementById("info.precio").innerHTML = "Precio por mes "+ gestor1.getPrecio()
 }
 
 function cambiarplan(){
@@ -90,5 +90,5 @@ function cambiarplan(){
 function calcularPeriodo(){
     const cantidadMeses = document.getElementById("meses").value
     
-    document.getElementById("infoperiodo").innerHTML = gestor1.setCalcularPeriodo(cantidadMeses)
+    document.getElementById("info.periodo").innerHTML = gestor1.setCalcularPeriodo(cantidadMeses)
 }

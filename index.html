@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Bancario Simple</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
+    <script src="script.js"></script>
     <h1>Sistema Bancario Simple</h1>
     <h2>Iniciar usuario:</h2>
     <form>
@@ -21,9 +22,9 @@
         <label for="precio">Precio nuevo:</label>
         <input type="number" id="precio" name="precio">
     </form>
-    <button onclick="cambiarPrecio()">CAMBIAR PRECIO</button>
-    <form>
-        <label for="tipoPlan">Nuevo plan:</label>
+    <button onclick="cambiarPrecio()"> CAMBIAR PRECIO</button>
+    <form> 
+        <label for="tipo.Plan">Nuevo plan:</label>
         <select id="plan">
             <option value="basico">Básico</option>
             <option value="estandar">Estandar</option>
@@ -31,19 +32,19 @@
         </select>
     </form>
     <button onclick="cambiarplan()">CAMBIAR PLAN</button>
-    <h3> Calcular el precio por cantidad de meses:</h3>
+    <h3> Calcular el precio por meses:</h3>
     <form>
         <label for="meses"> Cantidad de meses:</label>
         <input type="number" id="meses" name="meses">
     </form>
-    <button onclick="calcularPeriodo()"> CALCULAR</button>
-    <h3 id="infoperiodo"></h3>
-    <button onclick="mostrarInformacion()"> MOSTRAR INFORMACIÓN</button>
-    <h3 id="infonombre"></h3>
-    <h3 id="infocontrato"></h3>
-    <h3 id="infoplan"></h3>
-    <h3 id="infovelocidad"></h3>
-    <h3 id="infoprecio"></h3>
+    <button onclick="calcularPeriodo()"> CALCULAR </button>
+    <h3 id="info.periodo"></h3>
+    <button onclick="mostrarInformacion()"> MOSTRAR INFORMACIÓN </button>
+    <h3 id="info.nombre"></h3>
+    <h3 id="info.contrato"></h3>
+    <h3 id="info.plan"></h3>
+    <h3 id="info.velocidad"></h3>
+    <h3 id="info.precio"></h3>
 
     <script src="script/script.js"></script>
 </body>
